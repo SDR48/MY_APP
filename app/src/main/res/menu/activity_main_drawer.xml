@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/whatsapp_go"
+            android:icon="@mipmap/whatsapp"
+            android:title="@string/whatsapp" />
+        <item
+            android:id="@+id/fb_go"
+            android:icon="@mipmap/fb"
+            android:title="@string/facebook" />
+        <item
+            android:id="@+id/search_bar"
+            android:icon="@mipmap/combine"
+            android:title="@string/search" />
+        <item
+            android:id="@+id/contact"
+            android:icon="@mipmap/contact"
+            android:title="@string/contacts" />
+        <item
+            android:id="@+id/map"
+            android:icon="@mipmap/maps"
+            android:title="@string/navigate_map" />
+        <item
+            android:id="@+id/gm"
+            android:icon="@mipmap/gmail"
+            android:title="@string/gmail" />
+        <item
+            android:id="@+id/mp"
+            android:icon="@drawable/music"
+            android:title="@string/listen_to_music" />
+    </group>
+
+
+
+</menu>

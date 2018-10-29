@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@drawable/background_main">
+
+    <EditText
+        android:id="@+id/edit_text_number"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="88dp"
+        android:inputType="phone"
+        android:textColor="#ffffff"
+        tools:ignore="LabelFor"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <EditText
+        android:id="@+id/send"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="203dp"
+        android:textIsSelectable="true"
+        android:textColor="#ffffff"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/no_name" />
+
+
+    <ImageButton
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/message"
+        android:layout_marginTop="165dp"
+        app:srcCompat="@android:drawable/sym_action_call" />
+
+    <ImageButton
+        android:id="@+id/voiced"
+        android:layout_width="55dp"
+        android:layout_height="51dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/call"
+        android:layout_marginEnd="100dp"
+        app:srcCompat="@android:drawable/presence_audio_away" />
+
+    <ImageButton
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="104dp"
+        android:layout_marginStart="93dp"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <ImageButton
+        android:id="@+id/wats"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:layout_alignStart="@+id/voiced"
+        android:layout_alignTop="@+id/message"
+        app:srcCompat="@android:drawable/presence_audio_online" />
+
+</RelativeLayout>
